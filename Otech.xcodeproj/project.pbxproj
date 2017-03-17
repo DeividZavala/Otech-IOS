@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF66ABAF1E41153100BF1FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66ABAE1E41153100BF1FBF /* AppDelegate.swift */; };
+		AF66ABB41E41153100BF1FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF66ABB21E41153100BF1FBF /* Main.storyboard */; };
+		AF66ABB61E41153100BF1FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF66ABB51E41153100BF1FBF /* Assets.xcassets */; };
+		AF66ABB91E41153100BF1FBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF66ABB71E41153100BF1FBF /* LaunchScreen.storyboard */; };
+		AF66ABC31E41257A00BF1FBF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66ABC21E41257A00BF1FBF /* TableViewController.swift */; };
+		AF66ABCF1E4188F600BF1FBF /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66ABCE1E4188F600BF1FBF /* TableViewCell1.swift */; };
+		AF9C48111E53BFC200B97100 /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C48101E53BFC200B97100 /* RadioViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF66ABAB1E41153100BF1FBF /* Otech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Otech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF66ABAE1E41153100BF1FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF66ABB31E41153100BF1FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF66ABB51E41153100BF1FBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF66ABB81E41153100BF1FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF66ABBA1E41153100BF1FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF66ABC21E41257A00BF1FBF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AF66ABCE1E4188F600BF1FBF /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
+		AF9C48101E53BFC200B97100 /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF66ABA81E41153000BF1FBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF66ABA21E41153000BF1FBF = {
+			isa = PBXGroup;
+			children = (
+				AF66ABAD1E41153100BF1FBF /* Otech */,
+				AF66ABAC1E41153100BF1FBF /* Products */,
+				AFAC6FDC1E4D56C3000DAB68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF66ABAC1E41153100BF1FBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF66ABAB1E41153100BF1FBF /* Otech.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF66ABAD1E41153100BF1FBF /* Otech */ = {
+			isa = PBXGroup;
+			children = (
+				AF66ABAE1E41153100BF1FBF /* AppDelegate.swift */,
+				AF66ABB21E41153100BF1FBF /* Main.storyboard */,
+				AF66ABB51E41153100BF1FBF /* Assets.xcassets */,
+				AF66ABB71E41153100BF1FBF /* LaunchScreen.storyboard */,
+				AF66ABBA1E41153100BF1FBF /* Info.plist */,
+				AF66ABC21E41257A00BF1FBF /* TableViewController.swift */,
+				AF66ABCE1E4188F600BF1FBF /* TableViewCell1.swift */,
+				AF9C48101E53BFC200B97100 /* RadioViewController.swift */,
+			);
+			path = Otech;
+			sourceTree = "<group>";
+		};
+		AFAC6FDC1E4D56C3000DAB68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF66ABAA1E41153000BF1FBF /* Otech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF66ABBD1E41153100BF1FBF /* Build configuration list for PBXNativeTarget "Otech" */;
+			buildPhases = (
+				AF66ABA71E41153000BF1FBF /* Sources */,
+				AF66ABA81E41153000BF1FBF /* Frameworks */,
+				AF66ABA91E41153000BF1FBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Otech;
+			productName = Otech;
+			productReference = AF66ABAB1E41153100BF1FBF /* Otech.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF66ABA31E41153000BF1FBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "David Zavala";
+				TargetAttributes = {
+					AF66ABAA1E41153000BF1FBF = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XF67953943;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AF66ABA61E41153000BF1FBF /* Build configuration list for PBXProject "Otech" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF66ABA21E41153000BF1FBF;
+			productRefGroup = AF66ABAC1E41153100BF1FBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF66ABAA1E41153000BF1FBF /* Otech */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF66ABA91E41153000BF1FBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF66ABB91E41153100BF1FBF /* LaunchScreen.storyboard in Resources */,
+				AF66ABB61E41153100BF1FBF /* Assets.xcassets in Resources */,
+				AF66ABB41E41153100BF1FBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF66ABA71E41153000BF1FBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF66ABAF1E41153100BF1FBF /* AppDelegate.swift in Sources */,
+				AF66ABC31E41257A00BF1FBF /* TableViewController.swift in Sources */,
+				AF9C48111E53BFC200B97100 /* RadioViewController.swift in Sources */,
+				AF66ABCF1E4188F600BF1FBF /* TableViewCell1.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF66ABB21E41153100BF1FBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF66ABB31E41153100BF1FBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF66ABB71E41153100BF1FBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF66ABB81E41153100BF1FBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF66ABBB1E41153100BF1FBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF66ABBC1E41153100BF1FBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF66ABBE1E41153100BF1FBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XF67953943;
+				INFOPLIST_FILE = Otech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DavidZavala.Otech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AF66ABBF1E41153100BF1FBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XF67953943;
+				INFOPLIST_FILE = Otech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DavidZavala.Otech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF66ABA61E41153000BF1FBF /* Build configuration list for PBXProject "Otech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF66ABBB1E41153100BF1FBF /* Debug */,
+				AF66ABBC1E41153100BF1FBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF66ABBD1E41153100BF1FBF /* Build configuration list for PBXNativeTarget "Otech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF66ABBE1E41153100BF1FBF /* Debug */,
+				AF66ABBF1E41153100BF1FBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF66ABA31E41153000BF1FBF /* Project object */;
+}
