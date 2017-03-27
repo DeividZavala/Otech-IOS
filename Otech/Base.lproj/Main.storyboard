@@ -265,7 +265,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eaque necessitat
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wR1-yE-Xo6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="czx-XZ-joa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="czx-XZ-joa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -288,6 +288,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eaque necessitat
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gcc-Ov-KUk"/>
-        <segue reference="hmw-s5-4ht"/>
+        <segue reference="7J8-le-6sV"/>
     </inferredMetricsTieBreakers>
 </document>

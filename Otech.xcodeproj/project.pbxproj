@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DAB7ABF77360CA603815B31 /* Pods_Otech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0666A1E8C95A56D586ADE9B2 /* Pods_Otech.framework */; };
 		AF66ABAF1E41153100BF1FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66ABAE1E41153100BF1FBF /* AppDelegate.swift */; };
 		AF66ABB41E41153100BF1FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF66ABB21E41153100BF1FBF /* Main.storyboard */; };
 		AF66ABB61E41153100BF1FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF66ABB51E41153100BF1FBF /* Assets.xcassets */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0666A1E8C95A56D586ADE9B2 /* Pods_Otech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Otech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E50775EEE865034DDF1DDA6 /* Pods-Otech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Otech.release.xcconfig"; path = "Pods/Target Support Files/Pods-Otech/Pods-Otech.release.xcconfig"; sourceTree = "<group>"; };
+		92089D6B9EF7FA97CBAF7788 /* Pods-Otech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Otech.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Otech/Pods-Otech.debug.xcconfig"; sourceTree = "<group>"; };
 		AF66ABAB1E41153100BF1FBF /* Otech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Otech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF66ABAE1E41153100BF1FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF66ABB31E41153100BF1FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,18 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DAB7ABF77360CA603815B31 /* Pods_Otech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F1F2C979C8556A9AE101FAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92089D6B9EF7FA97CBAF7788 /* Pods-Otech.debug.xcconfig */,
+				5E50775EEE865034DDF1DDA6 /* Pods-Otech.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF66ABA21E41153000BF1FBF = {
 			isa = PBXGroup;
 			children = (
 				AF66ABAD1E41153100BF1FBF /* Otech */,
 				AF66ABAC1E41153100BF1FBF /* Products */,
 				AFAC6FDC1E4D56C3000DAB68 /* Frameworks */,
+				5F1F2C979C8556A9AE101FAA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +89,7 @@
 		AFAC6FDC1E4D56C3000DAB68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0666A1E8C95A56D586ADE9B2 /* Pods_Otech.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF66ABBD1E41153100BF1FBF /* Build configuration list for PBXNativeTarget "Otech" */;
 			buildPhases = (
+				06CA83BC5202D438A6AC3EB1 /* [CP] Check Pods Manifest.lock */,
 				AF66ABA71E41153000BF1FBF /* Sources */,
 				AF66ABA81E41153000BF1FBF /* Frameworks */,
 				AF66ABA91E41153000BF1FBF /* Resources */,
+				18F106FE6D23BBFA4FF22527 /* [CP] Embed Pods Frameworks */,
+				82126DABCB6F52EBA3005227 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +175,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06CA83BC5202D438A6AC3EB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		18F106FE6D23BBFA4FF22527 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Otech/Pods-Otech-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82126DABCB6F52EBA3005227 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Otech/Pods-Otech-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF66ABA71E41153000BF1FBF /* Sources */ = {
@@ -284,6 +351,7 @@
 		};
 		AF66ABBE1E41153100BF1FBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92089D6B9EF7FA97CBAF7788 /* Pods-Otech.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XF67953943;
@@ -297,6 +365,7 @@
 		};
 		AF66ABBF1E41153100BF1FBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E50775EEE865034DDF1DDA6 /* Pods-Otech.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XF67953943;
