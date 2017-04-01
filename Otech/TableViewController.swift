@@ -7,8 +7,37 @@
 //
 
 import UIKit
+import Alamofire
+import AVFoundation
 
 class TableViewController: UITableViewController {
+    
+    typealias JsonStandard = [String : AnyObject]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    func callAlamo(url: String) {
+        Alamofire.request(url).responseJSON(completionHandler: {
+            response in
+            self.JSONParse(JsonData: response.data!)
+            
+        })
+    }
+    
+    func  JSONParse(JsonData: Data) {
+        do{
+            var readableData = try JSONSerialization.jsonObject(with: JsonData, options: .mutableContainers) as! JsonStandard
+            if let posts = readableData["posts"] as? JsonStandard{
+                
+            }
+        }
+        catch{
+            print(error)
+        }
+    }
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
