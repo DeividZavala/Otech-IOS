@@ -35,7 +35,7 @@ class RadioViewController: UIViewController {
             pause.setImage(UIImage(named:"pause-button-png-6"), for: .normal)
         }else{
             self.player.pause()
-            pause.setImage(UIImage(named:"play-button-icon-png-26"), for: .normal)
+            pause.setImage(UIImage(named:"play-button-icon-png-26pause-button-png-6"), for: .normal)
         }
         
         

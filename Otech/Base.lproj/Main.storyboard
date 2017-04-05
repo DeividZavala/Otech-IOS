@@ -90,9 +90,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4P-rY-X4Y">
-                                <rect key="frame" x="79" y="351" width="216" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4P-rY-X4Y">
+                                <rect key="frame" x="79" y="339" width="216" height="54"/>
                                 <color key="backgroundColor" red="0.18930325140000001" green="0.51965702560000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Radio">
@@ -107,26 +106,32 @@
                                     <segue destination="NRl-l6-yVY" kind="show" id="hmw-s5-4ht"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="16467341_743675765791740_1739932996_n" translatesAutoresizingMaskIntoConstraints="NO" id="nV1-A1-Vus">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16467341_743675765791740_1739932996_n" translatesAutoresizingMaskIntoConstraints="NO" id="nV1-A1-Vus">
                                 <rect key="frame" x="0.0" y="28" width="375" height="145"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="fz3-mB-rCu"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yw-PC-CWR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yw-PC-CWR">
                                 <rect key="frame" x="143" y="533" width="216" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="Qho-Px-ge2"/>
+                                    <constraint firstAttribute="width" constant="216" id="Z3h-cg-FKf"/>
+                                </constraints>
                                 <string key="text">Edificio CEVIDE - 3er. Piso, Ciudad del Conocimiento
 Tel. 01 (771) 71 72000 Ext. 6132</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Contacto" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-lP-N84">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contacto" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-lP-N84">
                                 <rect key="frame" x="46" y="542" width="60" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="4yd-Wt-apc"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hc-b2-rGL">
-                                <rect key="frame" x="79" y="232" width="216" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hc-b2-rGL">
+                                <rect key="frame" x="79" y="232" width="216" height="54"/>
                                 <color key="backgroundColor" red="0.18930325140000001" green="0.51965702560000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -144,6 +149,22 @@ Tel. 01 (771) 71 72000 Ext. 6132</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kva-WD-s0e" firstAttribute="top" secondItem="bqf-lP-N84" secondAttribute="bottom" constant="29" id="3yv-wG-CCV"/>
+                            <constraint firstItem="0Hc-b2-rGL" firstAttribute="top" secondItem="BT9-fH-x30" secondAttribute="bottom" constant="212" id="8w7-mW-OlU"/>
+                            <constraint firstItem="bqf-lP-N84" firstAttribute="leading" secondItem="6bR-ih-PPB" secondAttribute="leadingMargin" constant="30" id="APV-Rq-4Fr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T4P-rY-X4Y" secondAttribute="trailing" constant="64" id="B8c-7h-Ezm"/>
+                            <constraint firstItem="Kva-WD-s0e" firstAttribute="top" secondItem="6Yw-PC-CWR" secondAttribute="bottom" constant="20" id="Glq-TX-x5D"/>
+                            <constraint firstItem="nV1-A1-Vus" firstAttribute="leading" secondItem="6bR-ih-PPB" secondAttribute="leadingMargin" constant="-16" id="Gpw-LW-pga"/>
+                            <constraint firstItem="0Hc-b2-rGL" firstAttribute="leading" secondItem="6bR-ih-PPB" secondAttribute="leadingMargin" constant="63" id="Qkw-GX-Dqf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nV1-A1-Vus" secondAttribute="trailing" constant="-16" id="Riq-ru-vDd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Yw-PC-CWR" secondAttribute="trailing" id="SPc-dd-f8y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Hc-b2-rGL" secondAttribute="trailing" constant="64" id="gUY-BG-oYN"/>
+                            <constraint firstItem="T4P-rY-X4Y" firstAttribute="leading" secondItem="6bR-ih-PPB" secondAttribute="leadingMargin" constant="63" id="hUV-pW-Gnm"/>
+                            <constraint firstItem="T4P-rY-X4Y" firstAttribute="top" secondItem="0Hc-b2-rGL" secondAttribute="bottom" constant="53" id="vmr-MS-fFK"/>
+                            <constraint firstItem="nV1-A1-Vus" firstAttribute="top" secondItem="BT9-fH-x30" secondAttribute="bottom" constant="8" id="yUP-44-bwW"/>
+                            <constraint firstItem="6Yw-PC-CWR" firstAttribute="leading" secondItem="bqf-lP-N84" secondAttribute="trailing" constant="37" id="yn9-1N-oPo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULU-Iz-6Mw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,39 +183,36 @@ Tel. 01 (771) 71 72000 Ext. 6132</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="otechLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NFQ-3P-Ybg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otechLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NFQ-3P-Ybg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H3s-Xz-Xwx">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3s-Xz-Xwx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="TrZ-8u-2ee">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TrZ-8u-2ee">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="otechLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Na2-cs-FgV">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otechLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Na2-cs-FgV">
                                             <rect key="frame" x="83" y="105" width="209" height="225"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Radio UAEH 99.7 FM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jci-gQ-5og">
-                                            <rect key="frame" x="60" y="383" width="254" height="61"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio UAEH 99.7 FM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jci-gQ-5og">
+                                            <rect key="frame" x="60" y="383" width="254" height="31.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2r-QM-NXN">
-                                            <rect key="frame" x="136" y="477" width="103" height="103"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button" image="pause-button-png-6"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2r-QM-NXN">
+                                            <rect key="frame" x="136" y="447.5" width="103" height="103"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="103" id="H4W-bo-4NH"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="play-button-icon-png-26"/>
                                             <connections>
                                                 <action selector="pause:" destination="NRl-l6-yVY" eventType="touchUpInside" id="kJa-cP-P9h"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmW-eo-P8W">
-                                            <rect key="frame" x="136" y="612" width="103" height="37"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmW-eo-P8W">
+                                            <rect key="frame" x="136" y="583.5" width="103" height="65.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <state key="normal" title="Regresar">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -204,11 +222,36 @@ Tel. 01 (771) 71 72000 Ext. 6132</string>
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="a2r-QM-NXN" firstAttribute="leading" secondItem="TrZ-8u-2ee" secondAttribute="leading" constant="136" id="3md-pM-zpF"/>
+                                        <constraint firstItem="Jci-gQ-5og" firstAttribute="top" secondItem="Na2-cs-FgV" secondAttribute="bottom" constant="53" id="8VH-03-ynn"/>
+                                        <constraint firstItem="XmW-eo-P8W" firstAttribute="top" secondItem="a2r-QM-NXN" secondAttribute="bottom" constant="33" id="DtE-9c-wgr"/>
+                                        <constraint firstItem="a2r-QM-NXN" firstAttribute="top" secondItem="Jci-gQ-5og" secondAttribute="bottom" constant="33" id="ES4-8e-4rL"/>
+                                        <constraint firstAttribute="trailing" secondItem="Jci-gQ-5og" secondAttribute="trailing" constant="61" id="LuZ-h1-wKV"/>
+                                        <constraint firstAttribute="trailing" secondItem="Na2-cs-FgV" secondAttribute="trailing" constant="83" id="PiL-xl-mOX"/>
+                                        <constraint firstItem="Jci-gQ-5og" firstAttribute="leading" secondItem="TrZ-8u-2ee" secondAttribute="leading" constant="60" id="Q4Q-cJ-ELO"/>
+                                        <constraint firstItem="Na2-cs-FgV" firstAttribute="top" secondItem="TrZ-8u-2ee" secondAttribute="top" constant="105" id="Uf9-R4-KCg"/>
+                                        <constraint firstAttribute="trailing" secondItem="XmW-eo-P8W" secondAttribute="trailing" constant="136" id="bZH-xP-7HP"/>
+                                        <constraint firstItem="XmW-eo-P8W" firstAttribute="leading" secondItem="TrZ-8u-2ee" secondAttribute="leading" constant="136" id="dBN-4a-TQT"/>
+                                        <constraint firstAttribute="trailing" secondItem="a2r-QM-NXN" secondAttribute="trailing" constant="136" id="fF7-iU-v6Y"/>
+                                        <constraint firstAttribute="bottom" secondItem="XmW-eo-P8W" secondAttribute="bottom" constant="18" id="q21-dG-jei"/>
+                                        <constraint firstItem="Na2-cs-FgV" firstAttribute="leading" secondItem="TrZ-8u-2ee" secondAttribute="leading" constant="83" id="xf7-7s-ZIv"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NFQ-3P-Ybg" firstAttribute="top" secondItem="0D5-Rf-E54" secondAttribute="top" id="2L3-g5-ta3"/>
+                            <constraint firstAttribute="trailing" secondItem="NFQ-3P-Ybg" secondAttribute="trailing" id="3mn-7Y-hQF"/>
+                            <constraint firstItem="tp0-nM-NXz" firstAttribute="top" secondItem="NFQ-3P-Ybg" secondAttribute="bottom" id="JOj-nj-PT2"/>
+                            <constraint firstItem="H3s-Xz-Xwx" firstAttribute="top" secondItem="0D5-Rf-E54" secondAttribute="top" id="abo-b0-afL"/>
+                            <constraint firstAttribute="trailing" secondItem="H3s-Xz-Xwx" secondAttribute="trailing" id="axu-b0-DiK"/>
+                            <constraint firstItem="NFQ-3P-Ybg" firstAttribute="leading" secondItem="0D5-Rf-E54" secondAttribute="leading" id="e9y-aQ-Fmn"/>
+                            <constraint firstItem="tp0-nM-NXz" firstAttribute="top" secondItem="H3s-Xz-Xwx" secondAttribute="bottom" id="oVb-eB-sqe"/>
+                            <constraint firstItem="H3s-Xz-Xwx" firstAttribute="leading" secondItem="0D5-Rf-E54" secondAttribute="leading" id="vYP-AV-0e8"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="pause" destination="a2r-QM-NXN" id="uf7-KE-9xB"/>
@@ -265,7 +308,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eaque necessitat
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wR1-yE-Xo6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="czx-XZ-joa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="czx-XZ-joa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -284,10 +327,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eaque necessitat
         <image name="16467341_743675765791740_1739932996_n" width="264" height="89"/>
         <image name="Contacto" width="572" height="852"/>
         <image name="otechLogo" width="225" height="225"/>
-        <image name="pause-button-png-6" width="256" height="256"/>
+        <image name="play-button-icon-png-26" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gcc-Ov-KUk"/>
-        <segue reference="7J8-le-6sV"/>
+        <segue reference="hmw-s5-4ht"/>
     </inferredMetricsTieBreakers>
 </document>
